@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="https://style-sheet.netlify.app/styles.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./product_listing.css" />
+    <title>Products</title>
+  </head>
+  <body class="bg-blueblack-900">
+    <header class="header">
+      <div class="header-section">
+        <i class="fas fa-bars menu"></i>
+        <div class="header-title">
+          <a href="../../index.html">
+            <h1 class="header-logo text-orange-500">Sneaker Store</h1>
+          </a>
+          <ul>
+            <li>
+              <a class="text-blueblack-50" href="#">Mens</a>
+            </li>
+            <li>
+              <a class="text-blueblack-50" href="#">Womens</a>
+            </li>
+            <li>
+              <a class="text-blueblack-50" href="#">Kids</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-section">
+        <input type="text" placeholder="Search" />
+        <i class="fas fa-search btn-search"></i>
+      </div>
+      <nav class="header-section">
+        <ul class="display-flex align-items-center">
+          <li>
+            <a
+              href="../../Components/signup/signup.html"
+              class="header-links font-weight-700 text-blueblack-50"
+              >Signup</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../Components/login/login.html"
+              class="header-links font-weight-700 text-blueblack-50"
+              >Login</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../Components/wishlist/wishlist.html"
+              class="header-links text-blueblack-50"
+            >
+              <span>
+                <i class="fas fa-heart text-red-400"></i>
+              </span>
+              <span class="cart font-size-xs">Wishlist</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="../../Components/cart/cart.html"
+              class="header-links text-blueblack-50"
+            >
+              <span>
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+              <span class="cart font-size-xs">Cart</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="page-layout">
+      <aside
+        class="aside bg-blueblack-900 text-blueblack-50 display-flex flex-column"
+      >
+        <div class="filter display-flex justify-content-space-between">
+          <p class="font-size-rg font-weight-700 text-orange-500">Filter</p>
+          <a class="text-underline text-blueblack-50 font-weight-700" href="#"
+            >Clear Filters</a
+          >
+        </div>
+        <div class="category display-flex flex-column">
+          <p class="font-size-rg font-weight-700 text-orange-500">Category</p>
+          <label class="font-size-sm font-weight-700"
+            ><input type="checkbox" /> Mens</label
+          >
+          <label class="font-size-sm font-weight-700"
+            ><input type="checkbox" /> Womens</label
+          >
+          <label class="font-size-sm font-weight-700"
+            ><input type="checkbox" /> Kids</label
+          >
+        </div>
+        <div class="rating-cont display-flex flex-column">
+          <p class="font-size-rg font-weight-700 text-orange-500">Rating</p>
+          <label class="font-size-sm font-weight-700"
+            ><input type="radio" />4 stars & above</label
+          >
+          <label class="font-size-sm font-weight-700"
+            ><input type="radio" />3 stars & above</label
+          >
+          <label class="font-size-sm font-weight-700"
+            ><input type="radio" />2 stars & above</label
+          >
+          <label class="font-size-sm font-weight-700"
+            ><input type="radio" />1 star & above</label
+          >
+        </div>
+        <div class="sort display-flex flex-column">
+          <p class="font-size-rg font-weight-700 text-orange-500">Sort By</p>
+          <label class="font-size-sm font-weight-700"
+            ><input type="radio" />Price - Low to High</label
+          >
+          <label class="font-size-sm font-weight-700"
+            ><input type="radio" />Price - Low to High</label
+          >
+        </div>
+      </aside>
+      <main class="docs-main product-display">
+        <div class="card-vertical">
+          <div class="image-container">
+            <img class="image" src="../../assets/images/sneaker_1.webp" />
+          </div>
+          <div class="card-desc">
+            <div class="card-header">
+              <h2 class="font-size-md">Air Jordan Sneakers</h2>
+              <p class="font-size-rg font-weight-700">
+                $3000
+                <span
+                  class="font-size-sm text-strike-through text-blueblack-400"
+                  >$5999</span
+                >
+              </p>
+              <p class="font-weight-700 text-blueblack-400">50% off</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-primary btn-sharp">Add to cart</button>
+              <button class="btn btn-secondary btn-sharp">
+                Save to wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-vertical">
+          <div class="image-container">
+            <img class="image" src="../../assets/images/sneaker_2.png" />
+          </div>
+          <div class="card-desc">
+            <div class="card-header">
+              <h2 class="font-size-md">Air Jordan Sneakers</h2>
+              <p class="font-size-rg font-weight-700">
+                $2500
+                <span
+                  class="font-size-sm text-strike-through text-blueblack-400"
+                  >$4999</span
+                >
+              </p>
+              <p class="font-weight-700 text-blueblack-400">50% off</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-primary btn-sharp">Add to cart</button>
+              <button class="btn btn-secondary btn-sharp">
+                Save to wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-vertical">
+          <div class="image-container">
+            <img class="image" src="../../assets/images/sneaker_3.png" />
+          </div>
+          <div class="card-desc">
+            <div class="card-header">
+              <h2 class="font-size-md">Air Jordan Sneakers</h2>
+              <p class="font-size-rg font-weight-700">
+                $2000
+                <span
+                  class="font-size-sm text-strike-through text-blueblack-400"
+                  >$3999</span
+                >
+              </p>
+              <p class="font-weight-700 text-blueblack-400">50% off</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-primary btn-sharp">Add to cart</button>
+              <button class="btn btn-secondary btn-sharp">
+                Save to wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-vertical">
+          <div class="image-container">
+            <img class="image" src="../../assets/images/sneaker.png" />
+          </div>
+          <div class="card-desc">
+            <div class="card-header">
+              <h2 class="font-size-md">Air Jordan Sneakers</h2>
+              <p class="font-size-rg font-weight-700">
+                $3000
+                <span
+                  class="font-size-sm text-strike-through text-blueblack-400"
+                  >$5999</span
+                >
+              </p>
+              <p class="font-weight-700 text-blueblack-400">50% off</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-primary btn-sharp">Add to cart</button>
+              <button class="btn btn-secondary btn-sharp">
+                Save to wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-vertical">
+          <div class="image-container">
+            <img class="image" src="../../assets/images/sneaker_2.png" />
+          </div>
+          <div class="card-desc">
+            <div class="card-header">
+              <h2 class="font-size-md">Air Jordan Sneakers</h2>
+              <p class="font-size-rg font-weight-700">
+                $2500
+                <span
+                  class="font-size-sm text-strike-through text-blueblack-400"
+                  >$4999</span
+                >
+              </p>
+              <p class="font-weight-700 text-blueblack-400">50% off</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-primary btn-sharp">Add to cart</button>
+              <button class="btn btn-secondary btn-sharp">
+                Save to wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-vertical">
+          <div class="image-container">
+            <img class="image" src="../../assets/images/sneaker_3.png" />
+          </div>
+          <div class="card-desc">
+            <div class="card-header">
+              <h2 class="font-size-md">Air Jordan Sneakers</h2>
+              <p class="font-size-rg font-weight-700">
+                $2000
+                <span
+                  class="font-size-sm text-strike-through text-blueblack-400"
+                  >$3999</span
+                >
+              </p>
+              <p class="font-weight-700 text-blueblack-400">50% off</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-primary btn-sharp">Add to cart</button>
+              <button class="btn btn-secondary btn-sharp">
+                Save to wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-vertical">
+          <div class="image-container">
+            <img class="image" src="../../assets/images/sneaker.png" />
+          </div>
+          <div class="card-desc">
+            <div class="card-header">
+              <h2 class="font-size-md">Air Jordan Sneakers</h2>
+              <p class="font-size-rg font-weight-700">
+                $3000
+                <span
+                  class="font-size-sm text-strike-through text-blueblack-400"
+                  >$5999</span
+                >
+              </p>
+              <p class="font-weight-700 text-blueblack-400">50% off</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-primary btn-sharp">Add to cart</button>
+              <button class="btn btn-secondary btn-sharp">
+                Save to wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-vertical">
+          <div class="image-container">
+            <img class="image" src="../../assets/images/sneaker_1.webp" />
+          </div>
+          <div class="card-desc">
+            <div class="card-header">
+              <h2 class="font-size-md">Air Jordan Sneakers</h2>
+              <p class="font-size-rg font-weight-700">
+                $3000
+                <span
+                  class="font-size-sm text-strike-through text-blueblack-400"
+                  >$5999</span
+                >
+              </p>
+              <p class="font-weight-700 text-blueblack-400">50% off</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-primary btn-sharp">Add to cart</button>
+              <button class="btn btn-secondary btn-sharp">
+                Save to wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-vertical">
+          <div class="image-container">
+            <img class="image" src="../../assets/images/sneaker_2.png" />
+          </div>
+          <div class="card-desc">
+            <div class="card-header">
+              <h2 class="font-size-md">Air Jordan Sneakers</h2>
+              <p class="font-size-rg font-weight-700">
+                $2500
+                <span
+                  class="font-size-sm text-strike-through text-blueblack-400"
+                  >$4999</span
+                >
+              </p>
+              <p class="font-weight-700 text-blueblack-400">50% off</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-primary btn-sharp">Add to cart</button>
+              <button class="btn btn-secondary btn-sharp">
+                Save to wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer-section">
+      <a href="../../index.html">
+        <h2 class="header-logo text-orange-500 font-size-xl">Sneaker Store</h2>
+      </a>
+      <div class="footer-links">
+        <a
+          class="nav-links social-links"
+          href="https://github.com/vivek-guda"
+          target="_blank"
+        >
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+        <a
+          class="nav-links social-links"
+          href="https://www.linkedin.com/in/vivek-reddy-g/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a
+          class="nav-links social-links"
+          href="https://twitter.com/GVivek_51"
+          target="_blank"
+        >
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+      </div>
+      <p class="footer-header text-blueblack-50">
+        Made with
+        <span class="text-orange-500">&lt;/&gt;</span> by Vivek
+      </p>
+    </footer>
+  </body>
+</html>

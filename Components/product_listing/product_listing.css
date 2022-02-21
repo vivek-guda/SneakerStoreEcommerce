@@ -1,0 +1,37 @@
+.aside {
+  padding: 1.25rem;
+}
+
+.aside > div {
+  margin: 1rem;
+}
+
+.aside > div > p {
+  margin: 0.25rem 0rem;
+}
+
+.aside > div > label {
+  margin: 0.25rem 0rem;
+  cursor: pointer;
+}
+
+.product-display {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, 250px); */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-row-gap: 3rem;
+}
+
+@media (max-width: 1500px) {
+  .product-display {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .product-display {
+    grid-template-columns: 1fr 1fr;
+  }
+}
