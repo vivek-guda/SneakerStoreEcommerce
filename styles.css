@@ -1,0 +1,147 @@
+:root {
+  --black-color: #101616;
+}
+
+.header {
+  box-sizing: border-box;
+  background-color: var(--black-color);
+}
+
+.header-logo {
+  font-family: "Comforter", cursive;
+}
+
+.header-links {
+  margin: 0 0.5rem;
+}
+
+.menu {
+  color: #fff;
+}
+
+.banner {
+  width: 100%;
+  height: 80vh;
+  background-image: url("./assets/images/sneaker.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.banner-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 4rem;
+}
+
+.banner-content > p:first-child {
+  font-size: 3.5rem;
+}
+
+.banner-shade {
+  width: 100%;
+  height: 3.1rem;
+  background-image: linear-gradient(180deg, transparent, #691722);
+}
+
+.section-heading {
+  margin: 2rem 1rem 0rem;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin: 2rem 1rem;
+}
+
+.product {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111;
+  padding: 1rem;
+}
+
+.social-links:hover {
+  color: var(--orange-500);
+}
+
+@media (max-width: 500px) {
+  .cart {
+    display: none;
+  }
+  .header-links {
+    margin: 0.25rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .banner {
+    height: 40vh;
+  }
+  .banner-content {
+    padding: 2rem 2rem 1rem;
+    font-size: 2rem;
+  }
+  .banner-content > p:first-child {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner {
+    height: 25vh;
+  }
+  .banner-content {
+    padding: 1rem 1rem 0rem;
+    font-size: 1.25rem;
+  }
+  .banner-content > p:first-child {
+    font-size: 1.5rem;
+  }
+  .banner-shade {
+    height: 2.5rem;
+  }
+}
+
+/* products-container media queries*/
+
+@media (max-width: 1500px) {
+  .product {
+    height: 350px;
+  }
+}
+
+@media (max-width: 980px) {
+  .product {
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .product {
+    height: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .products-container {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+  }
+}
