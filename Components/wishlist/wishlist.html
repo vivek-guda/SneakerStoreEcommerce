@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="https://style-sheet.netlify.app/styles.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../product_listing/product_listing.css" />
+    <link rel="stylesheet" href="../cart/cart.css" />
+    <title>Wishlist</title>
+  </head>
+  <body class="bg-blueblack-900">
+    <header class="header">
+      <div class="header-section">
+        <i class="fas fa-bars menu"></i>
+        <div class="header-title">
+          <a href="../../index.html">
+            <h1 class="header-logo text-orange-500">Sneaker Store</h1>
+          </a>
+          <ul>
+            <li>
+              <a
+                class="text-blueblack-50"
+                href="../product_listing/product_listing.html"
+                >Mens</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-blueblack-50"
+                href="../product_listing/product_listing.html"
+                >Womens</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-blueblack-50"
+                href="../product_listing/product_listing.html"
+                >Kids</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-section">
+        <input type="text" placeholder="Search" />
+        <i class="fas fa-search btn-search"></i>
+      </div>
+      <nav class="header-section">
+        <ul class="display-flex align-items-center">
+          <li>
+            <a
+              href="../../Components/signup/signup.html"
+              class="header-links font-weight-700 text-blueblack-50"
+              >Signup</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../Components/login/login.html"
+              class="header-links font-weight-700 text-blueblack-50"
+              >Login</a
+            >
+          </li>
+          <li>
+            <a href="#" class="header-links text-blueblack-50">
+              <span>
+                <i class="fas fa-heart text-red-400"></i>
+              </span>
+              <span class="cart font-size-xs">Wishlist</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="../../Components/cart/cart.html"
+              class="header-links text-blueblack-50"
+            >
+              <span>
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+              <span class="cart font-size-xs">Cart</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="wishlist-heading font-size-xl text-center text-blueblack-50">
+      My Wishlist
+    </h1>
+    <main
+      class="docs-main wishlist-display display-flex justify-content-space-evenly"
+    >
+      <div class="card-vertical">
+        <div class="image-container">
+          <img class="image" src="../../assets/images/sneaker_1.webp" />
+        </div>
+        <div class="card-desc">
+          <div class="card-header">
+            <h2 class="font-size-md">Air Jordan Sneakers</h2>
+            <p class="font-size-rg font-weight-700">
+              $3000
+              <span class="font-size-sm text-strike-through text-blueblack-400"
+                >$5999</span
+              >
+            </p>
+            <p class="font-weight-700 text-blueblack-400">50% off</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-secondary btn-sharp">
+              Remove from wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-vertical">
+        <div class="image-container">
+          <img class="image" src="../../assets/images/sneaker_2.png" />
+        </div>
+        <div class="card-desc">
+          <div class="card-header">
+            <h2 class="font-size-md">Air Jordan Sneakers</h2>
+            <p class="font-size-rg font-weight-700">
+              $2500
+              <span class="font-size-sm text-strike-through text-blueblack-400"
+                >$4999</span
+              >
+            </p>
+            <p class="font-weight-700 text-blueblack-400">50% off</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-secondary btn-sharp">
+              Remove from wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-vertical">
+        <div class="image-container">
+          <img class="image" src="../../assets/images/sneaker_3.png" />
+        </div>
+        <div class="card-desc">
+          <div class="card-header">
+            <h2 class="font-size-md">Air Jordan Sneakers</h2>
+            <p class="font-size-rg font-weight-700">
+              $2000
+              <span class="font-size-sm text-strike-through text-blueblack-400"
+                >$3999</span
+              >
+            </p>
+            <p class="font-weight-700 text-blueblack-400">50% off</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-secondary btn-sharp">
+              Remove from wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-vertical">
+        <div class="image-container">
+          <img class="image" src="../../assets/images/sneaker.png" />
+        </div>
+        <div class="card-desc">
+          <div class="card-header">
+            <h2 class="font-size-md">Air Jordan Sneakers</h2>
+            <p class="font-size-rg font-weight-700">
+              $3000
+              <span class="font-size-sm text-strike-through text-blueblack-400"
+                >$5999</span
+              >
+            </p>
+            <p class="font-weight-700 text-blueblack-400">50% off</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-secondary btn-sharp">
+              Remove from wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
