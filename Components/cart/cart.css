@@ -1,0 +1,43 @@
+.sign-btn {
+  padding: 0.1rem 0.35rem;
+  margin: 0.1rem;
+}
+
+.docs-main {
+  flex-grow: 0;
+}
+
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.cart-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.cart-total {
+  width: 400px;
+  color: var(--blueblack-50);
+  background-color: var(--green-500);
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 2rem;
+  border-radius: 0.625rem;
+  font-weight: 600;
+}
+.section-border-bottom {
+  border-bottom: 1px solid var(--blueblack-50);
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.wishlist-heading {
+  margin: 1rem 0;
+}
