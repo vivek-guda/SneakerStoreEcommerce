@@ -41,3 +41,8 @@
 .wishlist-heading {
   margin: 1rem 0;
 }
+
+.wishlist-display {
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
