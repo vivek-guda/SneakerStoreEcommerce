@@ -7,7 +7,7 @@
   flex-grow: 0;
 }
 
-.cart {
+.cart-cont {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
